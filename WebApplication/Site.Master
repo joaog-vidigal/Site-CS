@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHPROG</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="CSS/Projeto.css" rel="stylesheet" />
+    <link href="CSS/StyleSheet.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="Images/Design sem nome.png" />
+
+    <!-- Biblioteca JS paran exibir slide -->
+    <link href="Javascript/flexslider.css" rel="stylesheet" />
+    <script src="Javascript/jquery-1.7.2.min.js"></script>
+    <script src="Javascript/flexslider.min.js"></script>
+    <script src="https://kit.fontawesome.com/68e470a41f.js" crossorigin="anonymous"></script>
+
+
+
+
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+
+        <!-- CABEÇALHO -->
+
+        <header class="cabecalho">
+            <div class="content-wrap">
+
+                <!-- Logomarca -->
+                <a href="Default.aspx">
+                    <div class="logomarca">
+
+                        <img src="Images/Design sem nome.png" />
+                    </div>
+
+                    <!-- Barra Título -->
+                    <div class="barra-titulo">
+                        <h1>TECHPROG</h1>
+                    </div>
+                </a>
+
+                <!-- Barra Menu -->
+
+                <!-- Barra Menu -->
+
+                <!-- Barra Menu -->
+
+                <div id="navbar" class="barra-menu">
+                    <a target="_self" href="Default.aspx">Home</a>
+                    <a target="_self" href="Sobre.aspx">Sobre</a>
+                    <a target="_self" href="FaleConosco.aspx">Fale Conosco</a>
+                    <a target="_self" href="ViaCep.aspx">CEP</a>
+                    <a target="_self" href="CadastroUsuario.aspx">Cadastro</a>
+                    <a target="_self" href="ExibirUsuarios.aspx">Usuários</a>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- CONTEÚDO -->
+        <main>
+            <div class="conteudo content-wrap">
+                <asp:ContentPlaceHolder ID="Conteudo" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+        </main>
+
+        <!-- RODAPÉ -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h3>Sobre Nós</h3>
+                        <p>Somos uma empresa dedicada a fornecer as melhores soluções para nossos clientes.</p>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Links Úteis</h3>
+                        <ul>
+                            <li><a href="Default.aspx">Home</a></li>
+                            <li><a href="Sobre.aspx">Sobre</a></li>
+                            <li><a href="ViaCep.aspx">CEP</a></li>
+                            <li><a href="CadastroUsuario.aspx">Cadastro</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contato</h3>
+                        <p>Email: techprog@gmail.com</p>
+                        <p>Telefone: (19) 1234-0800</p>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Redes Sociais</h3>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://github.com/" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.instagram.com/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://br.linkedin.com/" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <p class="footer-bottom">&copy; 2024 TECHPROG. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+
+    </form>
+</body>
+</html>
